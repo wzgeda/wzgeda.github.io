@@ -8,7 +8,8 @@ fdisk /dev/sda
 mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
 ## install package
-pacstrap /mnt base linux linux-firmware dhcpcd xorg-server xorg-xinit xterm openbox xf86-video-nouveau wqy-microhei ttf-dejavu chromium sudo
+pacstrap /mnt base linux linux-firmware dhcpcd xorg-server xorg-xinit xterm \
+openbox xf86-video-nouveau wqy-microhei ttf-dejavu chromium sudo
 ## genfstab
 genfstab -U /mnt >> /mnt/etc/fstab
 ## arch-chroot
