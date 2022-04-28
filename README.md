@@ -1,3 +1,4 @@
+```shell
 ## modify source 
 vim /etc/pacman.d/mirrorlist
 Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
@@ -39,3 +40,4 @@ exec openbox-session
 ## reboot start xdg
 reboot
 startx
+```
