@@ -9,7 +9,7 @@ mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
 ## install package
 pacstrap /mnt base linux linux-firmware dhcpcd xorg-server xorg-xinit xterm \
-openbox xf86-video-nouveau wqy-microhei ttf-dejavu chromium sudo
+openbox xf86-video-nouveau wqy-microhei ttf-dejavu chromium sudo grub
 ## genfstab
 genfstab -U /mnt >> /mnt/etc/fstab
 ## arch-chroot
@@ -38,6 +38,9 @@ mkdir -p ~/.config/openbox
 cp -a /etc/xdg/openbox ~/.config
 vim ~.xinitrc
 exec openbox-session
+## grub
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
 ## reboot start xdg
 reboot
 startx
