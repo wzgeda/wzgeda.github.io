@@ -47,7 +47,7 @@ startx
 
 ## configure archlinuxcn source 
 ## app
-rox fcitx shadowsocks-qt5 pnmixer obconf google-chrome lxdm tint2 feh 
+rox fcitx shadowsocks-qt5 pnmixer obconf google-chrome lxdm tint2 feh alsa-utils
 ## xterm conf
 ~/.Xresources
 xterm*faceName:WenQuanYi Micro Hei Mono:pixelsize=16
