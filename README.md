@@ -44,4 +44,28 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ## reboot start xdg
 reboot
 startx
+
+## configure archlinuxcn source 
+## app
+rox fcitx shadowsocks-qt5 pnmixer obconf google-chrome lxdm tint2 feh 
+## xterm conf
+~/.Xresources
+xterm*faceName:WenQuanYi Micro Hei Mono:pixelsize=16
+xterm*faceNameDoublesize:WenQuanYi Micro Hei Mono:pixelsize=16
+xrdb ~/.Xresources
+## fcitx conf
+vim /etc/profile.d/fcitx.sh
+#!/bin/bash
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+## openbox autostart conf
+vim ~/.config/openbox/autostart
+tint2 &
+feh --bg-scale xxx.jpg &
+xrdb ~/.Xresource &
+shadowsocks-qt5 &
+pnmixer &
+vim ~/.config/openbox/environment
+LANG=zh_CN.UTF-8
 ```
