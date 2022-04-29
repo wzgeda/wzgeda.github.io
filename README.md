@@ -52,6 +52,8 @@ rox fcitx shadowsocks-qt5 pnmixer obconf google-chrome lxdm tint2 feh alsa-utils
 ~/.Xresources
 xterm*faceName:WenQuanYi Micro Hei Mono:pixelsize=16
 xterm*faceNameDoublesize:WenQuanYi Micro Hei Mono:pixelsize=16
+XTerm*foreground:#ffffcc
+XTerm*background:#808080
 xrdb ~/.Xresources
 ## fcitx conf
 vim /etc/profile.d/fcitx.sh
